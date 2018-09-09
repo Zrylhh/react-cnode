@@ -1,8 +1,9 @@
 @import '../../../common/style/global/index.scss';
 .TopicPlaceholder {
+  padding-left: px2rem(30);
+  padding-right: px2rem(30);
   .Placeholder {
-    padding: 0 px2rem(30);
-    padding: 0.24rem 0 ;
+    padding: 0.24rem 0 px2rem(30)
   }
   .ph-item {
     margin-bottom: 0;
@@ -14,6 +15,8 @@
   }
   .ph-row {
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
     div {
       height: 12px;
     }
