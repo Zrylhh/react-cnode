@@ -1,5 +1,4 @@
 @import '../../style/global/index.scss';
-$height: 48 * 2;
 .Layout {
   height: 100%;
   overflow: scroll;
@@ -8,23 +7,27 @@ $height: 48 * 2;
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  height: px2rem($height);
+  height: px2rem($navbarHeight);
   border-bottom: px2rem(1) solid $gray-border;
   z-index: $baseZindex;
   & > div {
-    padding-left: px2rem(30);
-    padding-right: px2rem(30);
+    padding-left: px2rem($page-padding);
+    padding-right: px2rem($page-padding);
+  }
+  & > nav {
+    padding-left: px2rem($page-padding);
+    padding-right: px2rem($page-padding);
   }
 }
 .LayoutMain {
-  padding-top: px2rem($height);
-  padding-bottom: px2rem($height);
+  padding-top: px2rem($navbarHeight);
+  padding-bottom: px2rem($navbarHeight);
 }
 .LayoutFooter {
   position: fixed;
   bottom: 0; left: 0;
   width: 100%;
-  height: px2rem($height);
+  height: px2rem($navbarHeight);
   border-top: px2rem(1) solid $gray-border;
   z-index: $baseZindex;
   & > div {
