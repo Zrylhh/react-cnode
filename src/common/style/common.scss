@@ -1,0 +1,131 @@
+@import './reset.scss';
+@import './global/index.scss';
+@import './placeholder.scss';
+
+html {
+  height: 100%;
+  font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw; 
+  @media screen and (max-width: 320px) {
+      font-size: 64px;
+  }
+  @media screen and (min-width: 540px) {
+      font-size: 108px;
+  }
+}
+body {
+  position: relative;
+  height: 100%;
+  max-width: $content-max-width;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  font: normal 14px/1.75 "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica, sans-serif;
+  color: #333;
+  -webkit-tap-highlight-color:transparent;
+  word-break: break-word;
+}
+#root {
+  height: 100%;
+}
+a {
+  color: #333;
+  outline: none;
+  &:hover, &:visited, &:link, &:focus {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+  }
+  &.is-underlined {
+    text-decoration: underline;
+  }
+}
+button {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+}
+ul,li {
+  list-style: none;
+}
+pre {
+  line-height: 1.25;
+  overflow-x: scroll;
+  background-color: #f6f6f6;
+  color: #657b83;
+  padding: .1rem;
+  border-radius: px2rem(8);
+}
+img {
+  max-width: 100%;
+}
+
+.btn {
+  text-align: center;
+  cursor: pointer;
+}
+.markdown-text {
+  padding: px2rem(18) 0;
+  p {
+    text-indent: px2rem(28);
+    margin-bottom: px2rem(28);
+    &:last-child{
+      margin-bottom: px2rem(0);
+    }
+  }
+  img {
+    display: block;
+    width: 80%;
+    margin: 0 auto px2rem(36) auto;
+    border-radius: px2rem(8);
+    background-color: #f9f9f9;
+  }
+  a {
+    font-style: italic;
+    color: $main-color;
+    text-decoration: underline;
+  }
+  h2, h3, h4 {
+    font-weight: 600;
+  }
+  h2 {
+    font-size: px2rem($title-size2);
+    margin: px2rem($title-size2) 0;
+  }
+  h3 {
+    font-size: px2rem($title-size3);
+    margin: px2rem($title-size3);
+  }
+  h4 {
+    font-size: px2rem($title-size4);
+    margin: px2rem($title-size4) 0;
+  }
+}
+.weight-normal {
+  font-weight: 400;
+}
+.weight-bold {
+  font-weight: 600;
+}
+.weight-bolder {
+  font-weight: 700;
+}
+.flex-row-between {
+  @include flex(space-between, row);
+  &.align-center {
+    align-items: center;
+  }
+}
+.flex-row-around {
+  @include flex(space-around, row);
+  &.align-center {
+    align-items: center;
+  }
+}
+.flex-row-center {
+  @include flex(center, row);
+  &.align-center {
+    align-items: center;
+  }
+}
