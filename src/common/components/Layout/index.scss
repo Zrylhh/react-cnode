@@ -1,0 +1,34 @@
+@import '../../style/global/index.scss';
+$height: 48 * 2;
+.Layout {
+  height: 100%;
+  overflow: scroll;
+}
+.LayoutHeader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: px2rem($height);
+  border-bottom: px2rem(1) solid $gray-border;
+  z-index: $baseZindex;
+  & > div {
+    padding-left: px2rem(30);
+    padding-right: px2rem(30);
+  }
+}
+.LayoutMain {
+  padding-top: px2rem($height);
+  padding-bottom: px2rem($height);
+}
+.LayoutFooter {
+  position: fixed;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: px2rem($height);
+  border-top: px2rem(1) solid $gray-border;
+  z-index: $baseZindex;
+  & > div {
+    padding-left: px2rem(30);
+    padding-right: px2rem(30);
+  }
+}
