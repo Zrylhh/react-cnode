@@ -4,8 +4,9 @@ import './index.css'
 
 export default class Layout extends React.PureComponent {
   render () {
+    let className = 'Layout ' + (this.props.className || '')
     return (
-      <div className="Layout">
+      <div className={className}>
         {this.props.children}
       </div>
     )
@@ -14,8 +15,9 @@ export default class Layout extends React.PureComponent {
 
 export class LayoutMain extends React.PureComponent {
   render () {
+    let className = 'LayoutMain ' + (this.props.className || '')
     return (
-      <div className="LayoutMain">
+      <div className={className}>
         {this.props.children}
       </div>
     )
@@ -24,8 +26,9 @@ export class LayoutMain extends React.PureComponent {
 
 export class LayoutFooter extends React.PureComponent {
   render () {
+    let className = 'LayoutFooter ' + (this.props.className || '')
     return (
-      <div className="LayoutFooter">
+      <div className={className}>
         {this.props.children}
       </div>
     )
@@ -34,8 +37,9 @@ export class LayoutFooter extends React.PureComponent {
 
 export class LayoutHeader extends React.Component {
   render () {
+    let className = 'LayoutHeader ' + (this.props.className || '')
     return (
-      <div className="LayoutHeader">
+      <div className={className}>
         {this.props.children}
       </div>
     )

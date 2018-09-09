@@ -13,10 +13,12 @@
   & > div {
     padding-left: px2rem($page-padding);
     padding-right: px2rem($page-padding);
+    height: 100%;
   }
   & > nav {
     padding-left: px2rem($page-padding);
     padding-right: px2rem($page-padding);
+    height: 100%;
   }
 }
 .LayoutMain {
