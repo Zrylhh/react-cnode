@@ -1,0 +1,21 @@
+@import '../../../common/style/global/index.scss';
+.TopicPlaceholder {
+  .Placeholder {
+    padding: 0 px2rem(30);
+    padding: 0.24rem 0 ;
+  }
+  .ph-item {
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+    &:nth-child(2n) {
+      margin: 0.1rem 0;
+    }
+  }
+  .ph-row {
+    margin: 0;
+    div {
+      height: 12px;
+    }
+  }
+}
