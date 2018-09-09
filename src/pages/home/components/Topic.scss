@@ -1,0 +1,25 @@
+@import '../../../common/style/global/index.scss';
+.TopicItem {
+  display: block;
+  padding: px2rem($title-size2) px2rem($page_blank);
+  .TopicItem-title {
+    margin: px2rem($copy-sizesmall) 0;
+    max-width: 90%;
+    font-size: px2rem($title-size4);
+  }
+  .topic-meta {
+    font-size: px2rem($copy-sizesmall);
+    color: $txt-color3;
+    a {
+      color: $txt-color2;
+      text-decoration: underline;
+      margin-right: px2rem(8);
+    }
+    .red {
+      color: $red;
+    }
+    .blue {
+      color: $main-color;
+    }
+  }
+}
