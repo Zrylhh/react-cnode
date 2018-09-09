@@ -1,0 +1,23 @@
+@import '../../style/global/index.scss';
+.visit-meta {
+  &.blue {
+    .far {
+      color: $main-color
+    }
+  }
+  .like, .comment {
+    padding: px2rem(6) px2rem(12);
+    border: 1px solid $gray-border;
+  }
+  .like {
+    border-right: none;
+  }
+  .far {
+    margin-right: px2rem(6);
+  }
+}
+.tab-meta {
+  span {
+    margin-right: px2rem(8);
+  }
+}
