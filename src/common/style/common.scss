@@ -129,3 +129,15 @@ img {
     align-items: center;
   }
 }
+.bottom-bordered {
+  @include bottom-bordered;
+}
+.top-bordered {
+  @include top-bordered;
+}
+.omitedsymbol {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
