@@ -1,0 +1,33 @@
+@import '../../common/style/global/index.scss';
+.NotFound {
+  text-align: center;
+  .figure {
+    margin-top: px2rem($page-padding * 2);
+    margin-bottom: px2rem($page-padding * 3);
+    .title {
+      margin-top: - px2rem($page-padding * 2);
+      color: $main-color;
+      font-size: px2rem($title-size1);
+    }
+    .warn-word {
+      color: $red;
+    }
+    .path {
+      color: $main-color;
+      padding: 0 px2rem(8);
+    }
+  }
+  .back-home {
+    display: inline-block;
+    text-decoration: underline!important;
+    .btn {
+      display: block;
+      width: px2rem(240);
+      min-height: px2rem(88);
+      line-height: px2rem(88);
+      font-size: px2rem($title-size3);
+      border-radius:  px2rem(8);
+      color: $main-color;
+    }
+  }
+}
