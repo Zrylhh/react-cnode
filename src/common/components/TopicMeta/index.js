@@ -26,7 +26,7 @@ export const TopicTabMeta = (props) => {
 }
 
 export const CreatedMeta = (props) => {
-  let { authorLoginname, createdAt } = props
+  let { authorLoginname, createdAt, timePfrefix = '最近回复' } = props
   createdAt = (new Date(createdAt)).toLocaleTimeString()
   if (authorLoginname) {
     return (
@@ -39,23 +39,24 @@ export const CreatedMeta = (props) => {
   }
   return (
     <div className="created-meta">
-      <span>最近回复: ${createdAt}</span>
+      <span>{timePfrefix}: ${createdAt}</span>
     </div>
   )
 }
 
 export const AuthorMeta = (props) => {
-  let { avatarUrl, loginname, to = undefined } = props
+  let { avatarUrl, loginname, to = undefined, className = '' } = props
+  className = 'AuthorMeta ' + className
   if (to) {
     return (
-      <Link to={to} className="AuthorMeta">
+      <Link to={to} className={className}>
         <img src={avatarUrl} alt="" className="avatar"/>
         <span className="author-name">{loginname}</span>
       </Link>
     )
   }
   return (
-    <div className="AuthorMeta">
+    <div className={className}>
       <img src={avatarUrl} alt="" className="avatar"/>
       <span className="author-name">{loginname}</span>
     </div>
