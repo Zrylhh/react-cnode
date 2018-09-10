@@ -1,11 +1,13 @@
-import reducers from './rootReducers'
+import { applyMiddleware, compose, createStore } from 'redux'
 import thunk from 'redux-thunk'
 import { createLogger } from 'redux-logger'
-import { applyMiddleware, compose, createStore } from 'redux'
-import { initialState as topics} from '../pages/home/store';
+import reducers from './rootReducers'
+import { initialState as topics} from '../pages/home/store'
+import { initialState as viewedTopic } from '../pages/topic/store'
 
 const initialState = {
-  topics
+  topics,
+  viewedTopic
 }
 
 const middlewares = [thunk, createLogger()]
