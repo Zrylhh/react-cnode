@@ -1,0 +1,43 @@
+@import '../../common/style/global/index.scss';
+.topics-wrapper {
+  transition: opacity ease-in 0.5s;
+  &.is-loading {
+    opacity: 0.5;
+  }
+  &.initial-loaded {
+    background-color: #f9f9f9;
+  }
+  li {
+    margin: px2rem(24);
+    border-radius: px2rem(4);
+    background-color: #fff;
+  }
+}
+
+.Topbar {
+  height: 100%;
+  background-color: $white;
+  .Dropdown-control {
+    border: none;
+    padding: 8px 30px 8px 0;
+  }
+  .Dropdown-arrow {
+    top: 17px;
+  }
+  .Dropdown-placeholder.is-selected {
+    color: $main-color;
+    font-weight: 600;
+  }
+  .Dropdown-option.is-selected {
+    background-color: $main-color;
+    color: $white;
+    font-weight: 600;
+  }
+  .search-box {
+    .btn {
+      padding-right: 0;
+      color: $main-color;
+      font-size: px2rem($title-size2);
+    }
+  }
+}
