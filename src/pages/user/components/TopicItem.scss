@@ -1,0 +1,20 @@
+@import '../../../common/style/global/index.scss';
+.TopicItem {
+  display: block;
+  padding: px2rem($copy-sizesmall) 0;
+  margin: px2rem($page-padding);
+  .meta-info {
+    font-size: px2rem($copy-sizesmall);
+    color: $txt-color3;
+    text-align: right;
+    .author {
+      margin-right: px2rem(4);
+      text-decoration: underline;
+    }
+  }
+  .TopicItem-title {
+    padding: px2rem($copy-sizesmall) 0;
+    max-width: 90%;
+    font-size: px2rem($title-size4);
+  }
+}
