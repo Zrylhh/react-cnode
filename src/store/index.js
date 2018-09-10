@@ -4,10 +4,12 @@ import { createLogger } from 'redux-logger'
 import reducers from './rootReducers'
 import { initialState as topics} from '../pages/home/store'
 import { initialState as viewedTopic } from '../pages/topic/store'
+import { initialState as viewedUser } from '../pages/user/store'
 
 const initialState = {
   topics,
-  viewedTopic
+  viewedTopic,
+  viewedUser
 }
 
 const middlewares = [thunk, createLogger()]
