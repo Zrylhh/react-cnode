@@ -55,6 +55,9 @@ export class Home extends Component {
                 }}
             >
             </Dropdown>
+            <div className="search-box">
+              <button className="btn btn-search"><i className="fas fa-search"></i></button>
+            </div>
           </div>
         </LayoutHeader>
         <LayoutMain className={this.props.topics && this.props.topics.items ? 'topics-wrapper initial-loaded' : 'topics-wrapper'}>
