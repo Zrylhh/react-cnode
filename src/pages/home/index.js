@@ -14,6 +14,10 @@ import 'react-dropdown/style.css'
 
 export class Home extends Component {
   componentDidMount () {
+    let items = this.props.topics.items
+    if (items && items.length) {
+      return
+    }
     this.props.fetchTopics()
   }
 
