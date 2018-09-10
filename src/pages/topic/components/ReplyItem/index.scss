@@ -1,0 +1,34 @@
+@import '../../../../common/style/global/index.scss';
+.ReplyItem {
+  padding: px2rem($page-padding) 0;
+  .meta-info {
+    font-size: px2rem($copy-sizesmall);
+    color: $txt-color2;
+  }
+  .AuthorMeta {
+    color: $main-color;
+    .avatar {
+      max-width: px2rem(72);
+      border-radius: px2rem(16);
+      margin-right: px2rem(16)
+    }
+  }
+  .reply-floor {
+    color: $main-color;
+  }
+  .ups-data {
+    .far {
+      color: $main-color;
+      margin-right: px2rem(8);
+    }
+  }
+  .btn-reply {
+    .far {
+      color: $main-color;
+      margin-right: px2rem(8);
+    }
+  }
+  .markdown-text {
+    padding: px2rem($page-padding) 0;
+  }
+}
