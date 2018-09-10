@@ -1,0 +1,36 @@
+@import '../../common/style/global/index.scss';
+.Topic-detail {
+  background-color: $gray-bg;
+  .content-brief {
+    padding: px2rem($page-padding);
+    background-color: $white;
+    .title {
+      line-height: 1.5;
+      padding: px2rem($page-padding) 0;
+      font-size: px2rem($title-size1);
+    }
+    .meta-info {
+      font-size: px2rem($copy-sizesmall);
+    }
+    .author {
+      padding-right: px2rem(4);
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+  .content-detail {
+    margin-top: px2rem($page-padding);
+    padding: px2rem($page-padding);
+    background-color: $white;
+  }
+  .Topic-replies {
+    margin-top: px2rem($page-padding *2);
+    padding: px2rem($page-padding);
+    background-color: $white;
+    .title {
+      font-size: px2rem($title-size2);
+      padding: px2rem($page-padding) 0;
+      border-bottom: 1px solid #eee;
+    }
+  }
+}
