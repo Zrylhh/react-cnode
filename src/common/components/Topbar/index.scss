@@ -17,14 +17,12 @@
     &.left {
       position: absolute;
       top: 0;
-      // left: px2rem($page-padding);
       left: 0;
       text-align: left;
     }
     &.right {
       position: absolute;
       top: 0;
-      // right: px2rem($page-padding);
       right: 0;
       text-align: right;
     }
@@ -39,5 +37,6 @@
     height: 48px;
     line-height: 48px;
     display: block;
+    font-size: px2rem($title-size2);
   }
 }

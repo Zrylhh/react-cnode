@@ -9,9 +9,10 @@ export default class Topbar extends React.PureComponent {
   }
 
   render() {
-    let { title } = this.props
+    let { title, className = 'Topbar'} = this.props
+    className = 'Topbar ' + className
     return (
-      <nav className="Topbar">
+      <nav className={className}>
         <span className="Topbar-title weight-bold">{title}</span>
         {this.props.children}
       </nav>
