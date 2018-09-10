@@ -10,3 +10,13 @@ export const LoadableTopic = Loadable({
   loading: Loading,
   loader: () => import('./topic/index')
 })
+
+export const LoadableUser = Loadable({
+  loading: Loading,
+  loader: () => import('./user')
+})
+
+export const LoadableNotFund = Loadable({
+  loading: Loading,
+  loader: () => import('./404')
+})
