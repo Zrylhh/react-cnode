@@ -1,5 +1,7 @@
-import Home from './home'
+import Loadable from 'react-loadable'
+import Loading from '../common/components/Loading'
 
-export default {
-  Home
-}
+export const LoadableHome = Loadable({
+  loading: Loading,
+  loader: () => import('./home/index')
+})
