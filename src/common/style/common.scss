@@ -85,6 +85,7 @@ img {
     font-style: italic;
     color: $main-color;
     text-decoration: underline;
+    font-size: px2rem($copy-sizesmall);
   }
   h2, h3, h4 {
     font-weight: 600;
