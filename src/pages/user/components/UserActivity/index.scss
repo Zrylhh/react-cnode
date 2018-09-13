@@ -1,0 +1,17 @@
+@import '../../../../common/style/global/index.scss';
+.UserActivity {
+  margin-bottom: px2rem($page-padding);
+  background-color: $white;
+  .Activity-title {
+    font-size: px2rem($title-size2);
+    padding: px2rem($page-padding*0.5) px2rem($page-padding);
+    border-bottom: 1px solid $gray-border;
+  }
+  .topics {
+    .no-activity {
+      padding: px2rem($page-padding * 2) 0 px2rem($page-padding);
+      font-size: px2rem($copy-sizenormal);
+      text-align: center;
+    }
+  }
+}
