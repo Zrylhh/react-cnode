@@ -1,2 +1,3 @@
-export const AJAX_START = 'AJAX_START'
 export const AJAX_ERROR = 'AJAX_ERROR'
+
+export const SHOW_AJAX_LOADING = 'SHOW_AJAX_LOADING'

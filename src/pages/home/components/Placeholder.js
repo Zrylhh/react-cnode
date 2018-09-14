@@ -1,5 +1,4 @@
 import React from 'react'
-import Loading from '../../../common/components/Loading'
 
 import './Placeholder.css'
 
@@ -34,7 +33,6 @@ export default class TopicPlaceholder extends React.Component {
   render () {
    return (
     <div className="TopicPlaceholder">
-      <Loading></Loading>
       <div className="placeholders">
         <Placehoder></Placehoder>
         <Placehoder></Placehoder>

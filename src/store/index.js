@@ -5,11 +5,13 @@ import reducers from './rootReducers'
 import { initialState as topics} from '../pages/home/store'
 import { initialState as viewedTopic } from '../pages/topic/store'
 import { initialState as viewedUser } from '../pages/user/store'
+import { initialState as user } from '../pages/login/store'
 
 const initialState = {
   topics,
   viewedTopic,
-  viewedUser
+  viewedUser,
+  user
 }
 
 const middlewares = [thunk, createLogger()]
